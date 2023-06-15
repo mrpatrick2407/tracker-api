@@ -1,0 +1,74 @@
+{
+    "products": [
+      {
+        "id": "12345",
+        "category": "Smartphones",
+        "brand": "Apple",
+        "model": "iPhone 13 Pro",
+        "features": {
+          "display_size": "6.1 inches",
+          "camera_resolution": "12 MP",
+          "battery_life": "22 hours",
+          "storage_capacity": "256 GB",
+          "connectivity": "5G"
+        },
+        "price": 1099
+      },
+      {
+        "id": "67890",
+        "category": "Laptops",
+        "brand": "Dell",
+        "model": "XPS 13",
+        "features": {
+          "display_size": "13.4 inches",
+          "processor": "Intel Core i7",
+          "memory": "16 GB",
+          "storage_capacity": "512 GB SSD",
+          "graphics": "Intel Iris Xe"
+        },
+        "price": 1399
+      },
+      {
+        "id": "13579",
+        "category": "Cameras",
+        "brand": "Sony",
+        "model": "Alpha a7 III",
+        "features": {
+          "sensor_resolution": "24.2 MP",
+          "image_stabilization": "5-axis",
+          "video_resolution": "4K",
+          "viewfinder": "Electronic",
+          "connectivity": "Wi-Fi, NFC, Bluetooth"
+        },
+        "price": 1999
+      },
+      {
+        "id": "24680",
+        "category": "Gaming Devices",
+        "brand": "Nintendo",
+        "model": "Switch OLED",
+        "features": {
+          "display_size": "7 inches OLED",
+          "resolution": "720p",
+          "battery_life": "Up to 9 hours",
+          "storage_capacity": "64 GB",
+          "connectivity": "Wi-Fi, Bluetooth"
+        },
+        "price": 349
+      },
+      {
+        "id": "97531",
+        "category": "Home Appliances",
+        "brand": "Samsung",
+        "model": "WF45K6500AV",
+        "features": {
+          "load_capacity": "4.5 cu. ft.",
+          "wash_cycles": "14",
+          "energy_star_certified": true,
+          "steam_wash": true,
+          "smart_connectivity": "Wi-Fi"
+        },
+        "price": 1099
+      }
+    ]
+  }

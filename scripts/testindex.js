@@ -1,0 +1,5 @@
+console.log(db.issues.getIndexes())
+//console.log(db.issues.find({$text:{$search:"click"}}))
+db.issues.dropIndex("title_text")
+//db.issues.createIndex({title:"text",description:"text"})
+console.log(db.issues.getIndexes())

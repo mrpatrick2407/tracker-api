@@ -1,0 +1,73 @@
+"""declare a scalar type"""
+scalar GraphQLDate
+
+enum statustype{
+  New
+  Assigned
+  Fixed
+  Closed
+
+}
+
+type IssueCount{
+owner:String!
+New:Int
+Assigned:Int
+Closed:Int
+Fixed:Int
+}
+
+input Issueinput{
+  title: String!
+  status: statustype
+    owner: String
+  effort: Int
+  due: GraphQLDate
+  description: String
+}
+input Issueupdateinput{
+  title: String
+  status: statustype
+    owner: String
+  effort: Int
+  due: GraphQLDate
+  description: String
+}
+
+type Issue {
+_id:ID!
+  id: Int
+  title: String!
+  status: statustype
+  owner: String
+  effort: Int
+  created: GraphQLDate
+  due: GraphQLDate
+  description: String
+}
+
+##### Top level declarations
+type issuelistwithpage{
+issuesDb:[Issue!]
+pages:Int
+}
+type Query {
+  about: String!
+  issueList(status:statustype
+  search:String
+  effortmin:Int
+  effortmax:Int,page:Int): issuelistwithpage!
+  examplethrow(a:Int,b:Int):Int!
+  examplecatchfromquery:Int!
+  issueAdd(issue:Issueinput!):Issue!
+  issue(id:Int!):Issue
+ issueCount(status:statustype,effortmin:Int,effortmax:Int):[IssueCount]!
+
+}
+
+type Mutation {
+  setAboutMessage(message: String!): String
+  issueUpdate(id:Int!,Changes:Issueupdateinput!): Issue!
+ examplecatchfrommutation:Int!
+ issueDelete(id:Int!):Boolean!
+ }
